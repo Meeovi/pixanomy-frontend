@@ -2,9 +2,9 @@
     <section data-bs-version="5.1" class="footer7 cid-u4ccfXoeP6" once="footers" id="footer7-8c"
         data-sortbtn="btn-primary">
         <div class="container">
-            <v-row class="align-left justify-content-center mbr-white">
+            <v-row class="align-left justify-content-center">
                 <v-col cols="3" v-for="child in copyright?.menus" :key="child.id">
-                    <NuxtLink :value="child?.name" :to="toPath(child?.slug)"><v-icon :prepend-icon="child?.icon"></v-icon>{{ child?.name }}
+                    <NuxtLink :value="child?.name" :to="toPath(child?.url)"><v-icon :prepend-icon="child?.icon"></v-icon>{{ child?.name }}
                     </NuxtLink>
                 </v-col>
                 <v-col cols="12">
@@ -40,7 +40,7 @@
     const {
         data: copyright
     } = await useAsyncData('copyright', async () => {
-        const result = await $directus.request($readItem('navigation', '10'))
+        const result = await $directus.request($readItem('navigation', '138'))
         return result?.data || result || {}
     })
 </script>

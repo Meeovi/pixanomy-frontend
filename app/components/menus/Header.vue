@@ -32,10 +32,6 @@
                         <v-col class="myaccounttopmenu">
                             <myaccounttopmenu />
                         </v-col>
-
-                        <v-col class="shoppingCart">
-                            <cart />
-                        </v-col>
                     </div>
                 </v-col>
             </v-row>
@@ -71,7 +67,7 @@
     defineEmits(['toggleDrawer'])
 
     const drawer = ref(null);
-    const placeholder = 'Search Starter Template'
+    const placeholder = 'Search your media, assets, templates, and more'
     const theme = useTheme()
     const themeName = computed(() => theme.global.name.value)
     const isDark = computed(() => theme.global.current.value.dark)

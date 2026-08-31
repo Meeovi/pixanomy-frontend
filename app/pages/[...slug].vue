@@ -1,19 +1,9 @@
 <template>
   <div class="contentPage">
-    <Pagebar v-if="page?.type !== 'Page'" />
-
-    <br>
+    <!--<div v-if="page?.slug === 'about-meeovi-account'"><about /></div>-->
 
     <div class="contentSection">
       <v-card elevation="0">
-        <v-img class="align-end text-white" height="200" src="assets/images/background4.jpg" cover>
-          <v-card-title style="font-size: 35px;">{{ page?.name }}</v-card-title>
-        </v-img>
-
-        <v-card-subtitle class="pt-4">
-          Published: {{ page?.date_created ? new Date(page.date_created).toLocaleDateString() : '' }}
-        </v-card-subtitle>
-
         <v-card-text v-html="page?.content"></v-card-text>
 
         <v-card-actions>
@@ -29,8 +19,8 @@
     ref,
     watch
   } from 'vue'
-  import Pagebar from '../components/menus/page/pagebar.vue'
   import share from '#social/app/components/blocks/share.vue'
+  //import about from '../components/blocks/about.vue'
 
   const route = useRoute()
   const {
@@ -63,9 +53,9 @@
 
   useSeoMeta({
     title: () => page.value?.name || 'Page',
-    description: () => page.value?.description || 'E-Commerce application built with Nuxt & Shopify',
+    description: () => page.value?.description || '',
     ogTitle: () => page.value?.name || 'Page',
-    ogDescription: () => page.value?.description || 'E-Commerce application built with Nuxt & Shopify',
+    ogDescription: () => page.value?.description || '',
     twitterCard: 'summary_large_image',
   })
 
@@ -76,9 +66,5 @@
     theme: '#4ADE80',
     headline: '',
     colorMode: 'dark',
-  })
-
-  definePageMeta({
-    layout: 'nolive',
   })
 </script>

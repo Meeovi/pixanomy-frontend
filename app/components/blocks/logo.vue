@@ -29,7 +29,7 @@ import { getAssetURL } from '#shared/app/utils/get-asset-url'
 const hasAsset = (file) => Boolean(getAssetURL(file))
 
 const { data: blocksSiteoverview } = await useAsyncData('blocksSiteoverview', async () => {
-    const resp = await $directus.request($readItem('websites', '25', {
+    const resp = await $directus.request($readItem('websites', '2', {
         fields: ['*'],
     }))
     return resp?.data || resp || {}
