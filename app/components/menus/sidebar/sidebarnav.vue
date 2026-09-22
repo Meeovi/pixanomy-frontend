@@ -1,6 +1,5 @@
 <template>
   <div class="drawer-content">
-    <sidebartop />
     <v-list nav>
       <trendingMenu />
 
@@ -14,7 +13,6 @@
   import {
     useTheme
   } from 'vuetify'
-  import sidebartop from './sidebartop.vue'
   import trendingMenu from './trendingMenu.vue'
   import footersidebarNav from './footersidebarNav.vue'
 

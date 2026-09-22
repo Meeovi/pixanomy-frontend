@@ -19,8 +19,6 @@
     ref,
     watch
   } from 'vue'
-  import share from '#social/app/components/blocks/share.vue'
-  //import about from '../components/blocks/about.vue'
 
   const route = useRoute()
   const {

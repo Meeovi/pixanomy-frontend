@@ -6,16 +6,16 @@
                     <NuxtImg provider="cloudinary" :src="getAssetURL(blocksSiteoverview?.media?.[0]?.file || blocksSiteoverview?.media?.[0])"
                         :alt="blocksSiteoverview?.name" />
                 </v-icon>
-                <p class="logotext">{{ blocksSiteoverview?.name }}<!--Meeovi--></p>
+                <p class="logotext">{{ blocksSiteoverview?.name }}<!--Pixanomy--></p>
             </NuxtLink>
         </v-app-bar-title>
 
         <v-app-bar-title v-else>
             <NuxtLink class="logobrand" :to="blocksSiteoverview?.url">
                 <v-icon start color="orange">
-                    <NuxtImg provider="cloudinary" src="/images/logo512alpha.png" :alt="blocksSiteoverview?.name" />
+                    <NuxtImg provider="cloudinary" src="/images/Firefly.png" :alt="blocksSiteoverview?.name" />
                 </v-icon>
-                <p class="logotext">{{ blocksSiteoverview?.name }}<!--Meeovi--></p>
+                <p class="logotext">{{ blocksSiteoverview?.name }}<!--Pixanomy--></p>
             </NuxtLink>
         </v-app-bar-title>
     </div>

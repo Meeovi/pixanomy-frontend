@@ -2,8 +2,8 @@
     <div>
         <v-row>
             <v-col cols="3" v-for="item in footerSidebarnav?.submenus" :key="item">
-                <v-btn variant="text" stacked :title="item?.name" :value="item?.name" :prepend-icon="item?.icon"
-                    :href="item?.url" size="x-small">{{ footerSidebarnav?.name }}</v-btn>
+                <v-btn v-if="item?.name !== 'Notifications'" variant="text" stacked :title="item?.name" :value="item?.name" :prepend-icon="item?.icon"
+                    :href="item?.url" size="x-small">{{ item?.name }}</v-btn>
             </v-col>
             <v-col cols="3">
                 <v-btn @click="toggleDark()" variant="text">

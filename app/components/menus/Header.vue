@@ -3,7 +3,7 @@
         <v-app-bar id="topnav">
             <template v-slot:prepend>
                 <v-btn class="mainMenu" variant="flat" color="transparent" @click="$emit('toggleDrawer')">
-                    <v-icon start icon="fas fa-bars"></v-icon> Menu
+                    <v-icon start icon="fas fa-camera"></v-icon> Menu
                 </v-btn>
             </template>
             <v-row>
@@ -14,23 +14,17 @@
                 </v-col>
 
                 <v-col cols="8">
-                    <ClientOnly>
-                        <Search :placeholder="placeholder" />
-                    </ClientOnly>
+                    
                 </v-col>
 
                 <v-col cols="2">
                     <div class="d-flex align-center flex-column flex-sm-row fill-height rightTopNav">
-                        <v-col class="notificationsHeader">
-                            <LayoutNotifications />
-                        </v-col>
-
                         <v-col class="ecosystemMenuIcon">
                             <ecosystemmenu />
                         </v-col>
 
                         <v-col class="myaccounttopmenu">
-                            <myaccounttopmenu />
+                            <v-btn title="Go to the Pixanomy App" text="Dashboard" href="https://app.pixanomy.com"></v-btn>
                         </v-col>
                     </div>
                 </v-col>
@@ -49,13 +43,6 @@
         useTheme
     } from 'vuetify'
     import logo from '../blocks/logo.vue'
-    import LayoutNotifications from './topmenu/LayoutNotifications.vue'
-    import ecosystemmenu from './topmenu/ecosystemmenu.vue'
-    import Search from '#search/app/components/searchBar.vue'
-    import cart from '#commerce/app/components/menus/cart.vue'
-    //import LayoutNotifications from './Notifications.vue'
-    import mobilesearch from '#search/app/components/menus/mobilesearch.vue'
-    import myaccounttopmenu from './topmenu/myaccounttopmenu.vue'
 
     defineProps({
         drawer: {

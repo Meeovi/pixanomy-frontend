@@ -1,22 +1,22 @@
 {
-   "name": "starter-template",
+   "name": "pixanomy-frontend",
    "type": "module",
    "version": "0.0.5",
-   "description": "Official M Framework starter template.",
-   "author": "M Framework Labs (https://framework.meeovi.com)",
-   "homepage": "https://framework.meeovi.com",
+   "description": "Centralize your digital assets. Store, share, and manage them all in one place.",
+   "author": "M Framework Labs (https://www.pixanomy.com)",
+   "homepage": "https://www.pixanomy.com",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/Meeovi/Meeovi-Starter-Template"
+      "url": "git+https://github.com/Meeovi/pixanomy-frontend"
    },
    "bugs": {
-      "url": "https://github.com/Meeovi/Meeovi-Starter-Template/issues"
+      "url": "https://github.com/Meeovi/pixanomy-frontend/issues"
    },
    "license": "MIT",
    "private": true,
    "scripts": {
-      "starter-commit": "git add . && git commit -m \"ready for update\"",
-      "starter-update": "git pull \"https://github.com/Meeovi/Meeovi-Starter-Template\"",
+      "pix-commit": "git add . && git commit -m \"ready for update\"",
+      "pix-update": "git pull \"https://github.com/Meeovi/pixanomy-frontend\"",
       "dev": "nuxt dev --host 0.0.0.0",
       "dev-sw": "SW=true nuxi dev",
       "build": "nuxt build",

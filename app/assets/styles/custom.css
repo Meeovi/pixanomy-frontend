@@ -1,0 +1,182 @@
+.header-container .container {
+    max-width: 90% !important;
+}
+
+.horizontal-menu {
+    right: 17%;
+    position: relative;
+    float: left;
+}
+
+.logo-container {
+    top: -20px;
+    position: relative;
+}
+
+.logo img {
+   width: 150px;
+}
+
+@media (min-width: 1024px) {
+    body .container,
+    body .page-main{
+    max-width: 1740px !important;
+    }
+}
+
+.banner-block-2 img, .banner-block-3 img {
+  width: 100% !important;
+}
+
+.grid-product-1 .block-content .products-grid .product-item {
+    width: 30% !important;
+    margin-left: 0;
+    float: none !important;
+    position: relative;
+    padding: 20px 0;
+}
+
+.footer-block .footer-block-title, .footer-block a {
+    color: white !important;
+}
+
+.header-middle {
+    padding: 7px 0 0 !important;
+    background-color: cadetblue !important;
+}
+
+.account-links:after {
+    color: white !important;
+}
+
+.wishlist-header a:before, .header-container .minicart-wrapper .action.showcart:after, .header-container .minicart-wrapper .action.showcart .price-minicart {
+    color: white !important;
+}
+
+.header-container .block-search .field.search {
+    border-radius: 0px !important;
+}
+
+.header-container .block-search .field.search .control {
+    margin: 0;
+    padding: 0;
+    border: 0px !important;
+    border-radius: 0px !important;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.header-container .block-search .actions .action.search {
+    position: static;
+    color: #fff;
+    text-transform: capitalize;
+    height: 40px;
+    opacity: 1 !important;
+    padding: 0 30px;
+    font-weight: 400;
+    border-radius: 0px !important;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 0;
+}
+
+.header-bottom {
+    padding: 5px 0 !important;
+}
+
+.logo img {
+    width: 130px !important;
+    top: 15px !important;
+    position: relative;
+}
+
+.header-top {
+    display: none !important;
+}
+
+.header-mid-right > div.wishlist-header, .minicart-header {
+    top: 0px !important;
+    position: relative !important;
+}
+
+.desktop-menu .vertical-block {
+    float: left;
+    width: 120px !important;
+}
+
+@media (min-width: 768px), print {
+    .block-search .action.search>span {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: 0px !important;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+
+[data-content-type='row'][data-appearance='full-width'] > .row-full-width-inner {
+    top: 20px !important;
+    position: relative !important;
+}
+
+.header-container .minicart-wrapper .action.showcart {
+    top: -2px;
+}
+
+.easycatalogimg a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+#mpblog-list-container img {
+    width: 100% !important;
+    height: 350px !important;
+    object-fit: cover;
+}
+
+.post-sharing-button .img-responsive {
+    display: inline-block !important;
+    padding-right: 15px;
+    width: 51px !important;
+}
+
+/********************* Custom Mobirise CSS *********************/
+
+.display-7 {
+    font-size: 18px !important;
+}
+
+.display-4 {
+    font-size: 15px !important;
+}
+
+.header-mobile .mobile-logo img {
+    max-height: 32px;
+    width: auto;
+    margin-top: 9px;
+    left: 50% !important;
+    position: relative;
+}
+
+.nav-tabs .nav-link:not(.active) {
+    display: inline-block !important;
+}
+
+#setting-mobile-tab, #my-account-mobile-tab, #menu-mobile-tab {
+    display: inline-block !important;
+}
+
+img, iframe {
+    display: block;
+    width: auto !important;
+}
+
+.item-img img{
+    width: 100% !important;
+    height: 100% !important;
+    height: 300px !important;
+    object-fit: cover;
+}

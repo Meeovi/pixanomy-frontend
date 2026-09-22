@@ -41,7 +41,6 @@
         computed,
         ref
     } from 'vue'
-    import mobileSearch from '#search/app/components/menus/mobilesearch.vue'
 
     const value = ref(1)
     const color = computed(() => {

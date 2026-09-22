@@ -8,10 +8,6 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 const layers = useLayers(__dirname, {
   shared: '../../../layers/shared',
-  auth: '../../../layers/auth',
-  search: '../../../layers/search',
-  commerce: '../../../layers/commerce',
-  social: '../../../layers/social',
 })
 
 export default defineNuxtConfig({
@@ -20,27 +16,6 @@ export default defineNuxtConfig({
     ...Object.fromEntries(
       Object.entries(layers.alias('#')).map(([key, value]) => [key, resolve(__dirname, value)])
     ),
-    '@mframework/meeovi-forms': resolve(__dirname, '../../../packages/plugins/meeovi-forms/src'),
-    '@mframework/meeovi-forms/': resolve(__dirname, '../../../packages/plugins/meeovi-forms/src/') + '/'
-  },
-  routeRules: {
-    '/auth/login': {
-      redirect: '/login'
-    },
-    '/auth/register': {
-      redirect: '/register'
-    },
-    '/auth/reset-password': {
-      redirect: '/reset-password'
-    },
-    '/auth/callback': {
-      redirect: '/callback'
-    },
-    "/directus/**": {
-      proxy: {
-        to: import.meta.env.DIRECTUS_URL + "/**"
-      }
-    },
   },
 
   ssr: true,
@@ -58,10 +33,10 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      titleTemplate: `%s - ${process.env.NUXT_PUBLIC_SITE_NAME || 'Meeovi'}`,
+      titleTemplate: `%s - ${process.env.NUXT_PUBLIC_SITE_NAME || 'Pixanomy'}`,
       meta: [{
           name: 'description',
-          content: `${process.env.NUXT_PUBLIC_SITE_DESCRIPTION || 'Meeovi'}`
+          content: `${process.env.NUXT_PUBLIC_SITE_DESCRIPTION || 'Pixanomy'}`
         },
         {
           name: 'viewport',
@@ -81,7 +56,7 @@ export default defineNuxtConfig({
   },
 
   appConfig: {
-    titleSuffix: `${process.env.NUXT_PUBLIC_SITE_NAME || ' - Meeovi'}`
+    titleSuffix: `${process.env.NUXT_PUBLIC_SITE_NAME || ' - Pixanomy'}`
   },
 
   css: [
@@ -91,21 +66,14 @@ export default defineNuxtConfig({
     'assets/bootstrap/css/bootstrap-reboot.min.css',
     'assets/theme/css/style.css',
     'assets/mobirise/css/mbr-additional.css',
-    'assets/styles/social.css',
     'assets/styles/mobile.css',
-    'assets/styles/styles.css',
-    'assets/styles/search.css',
-    'assets/styles/auth.css',
+    'assets/styles/styles.css'
   ],
 
   modules: [
     '@pinia/nuxt',
     '@sentry/nuxt/module',
   ],
-
-  pinia: {
-    storesDirs: ['/app/stores/**'],
-  },
 
   runtimeConfig: {
     public: {

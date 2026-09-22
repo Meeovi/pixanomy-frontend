@@ -115,7 +115,7 @@ body {
 .logobrand {
     text-decoration: none;
     position: relative;
-    top: 8px;
+    top: 6px;
 }
 
 .rightTopNav {
@@ -149,6 +149,14 @@ body {
 .contentPage > .v-row {
     padding: 10px;
     background-color: transparent;
+}
+
+.cid-vvYiecuZo5 .content-wrapper, .cid-vvYiey8oxF .content-wrapper {
+    background: transparent !important;
+}
+
+.cid-vvYifS7tw3 .display-2, .cid-vvYifS7tw3 .display-7 {
+    color: black !important;
 }
 
 /***************** Footer ********************/

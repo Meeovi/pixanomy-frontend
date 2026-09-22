@@ -33,8 +33,6 @@
           <!---->
         </v-main>
       </v-app>
-      
-      <mobileNav />      
     </v-responsive>
   </div>
 </template>
